@@ -1,4 +1,4 @@
-//Kieran O'Halloran    fff
+//Kieran O'Halloran
 
 package main
 

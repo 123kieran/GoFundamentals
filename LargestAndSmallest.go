@@ -8,10 +8,7 @@ import "fmt"
 
 func main() { //function to create a list of numbers
 	x := []int{
-		8, 9, 65, 87,
-		57, 22, 52, 44,
-		47, 94, 83, 27,
-		19, 97, 89, 17,
+		8, 9, 65, 87, 57, 22, 52, 44, 47, 94, 83, 27, 19, 97, 89, 17,
 	}
 
 	smallest, biggest := x[0], x[0] //set largest and smallest to 0

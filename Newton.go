@@ -1,4 +1,4 @@
-//Kieran O'Halloran 
+//Kieran O'Halloran
 package main
 
 //import math for comparissons
@@ -27,6 +27,6 @@ func NewtonsSqrt(x float64) (z float64) {
 }
 
 func main() {
-	fmt.Println("\nNewtons answer is:  ", (NewtonsSqrt(1500)))      //Newtons formula
-	fmt.Println("\nThe Math package answer is:  ", math.Sqrt(1500)) //callled from math package
+	fmt.Println("\nNewtons answer is: ", (NewtonsSqrt(1500)))      //Newtons formula
+	fmt.Println("\nThe Math package answer is: ", math.Sqrt(1500)) //callled from math package
 }

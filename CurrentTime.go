@@ -7,6 +7,6 @@ import (
 	"time"
 )
 
-func main() {
+func ctime() {
 	fmt.Println("The time is", time.Now())
 }

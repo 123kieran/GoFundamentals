@@ -1,7 +1,8 @@
 //Kieran O'Halloran
+
 package main
 
-//import math for comparissons
+//import math and ftm
 import (
 	"fmt"
 	"math"
@@ -10,16 +11,14 @@ import (
 const Delta = 0.0000001
 const InitialZ = 600.0
 
-//This is Newtons method, he approximates Sqrt by picking the starting
-//point z and then repeating: z-(z*z - x)/(2*z)
 func NewtonsSqrt(x float64) (z float64) {
 	const IniitialZ = 100.0
 	z = InitialZ
 
-	step := func() float64 { //makes step the actual mathamatical function
+	step := func() float64 {
 		return z - (z*z-x)/(2*z)
 	}
-	for zz := step(); math.Abs(zz-z) > Delta; { //abs is the absolute value
+	for zz := step(); math.Abs(zz-z) > Delta; {
 		z = zz
 		zz = step()
 	}

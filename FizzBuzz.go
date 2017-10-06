@@ -4,8 +4,7 @@ package main
 
 import "fmt"
 
-
-func main(){
+func fizz() {
 
 	for i := 1; i <= 100; i++ {
 		//if number can be divided by 3

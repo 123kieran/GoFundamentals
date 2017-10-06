@@ -1,24 +1,28 @@
 //Kieran O'Halloran
+//https://coderwall.com/p/fw6miw/reverse-text-in-golang
 
 package main
 
 import "fmt"
 
-/*Reversing a string by word is very similar to the process to reverse an array.
-The difference is that strings are immutable in Go. Therefor, we must first
-convert the string to a mutable array of runes ([]rune),
- perform the reverse operation on that, and then re-cast to a string.*/
-
-func reverse(s string) string {
-	chars := []rune(s)
-	for i, j := 0, len(chars)-1; i < j; i, j = i+1, j-1 {
-		chars[i], chars[j] = chars[j], chars[i]
+func Reverse(s string) string {
+	var result string
+	//looping from end of string to element 0 and populating result with characters in each element
+	for i := len(s) - 1; i >= 0; i-- {
+		result += string(s[i])
 	}
-	return string(chars)
+	return result
 }
 
+//main function
 func main() {
-	//Can also deal with Japanese text
-
-	fmt.Printf("%v\n", reverse("こんにちは世界"))
+	//declare variable for input string
+	var str string
+	//ask user for string
+	fmt.Println("Please enter string: ")
+	//scans user input into console
+	fmt.Scanf("%s ", &str)
+	fmt.Println()
+	//outputs result
+	fmt.Println("Reverse string: ", Reverse(str))
 }

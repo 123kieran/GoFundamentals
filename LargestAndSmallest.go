@@ -16,10 +16,10 @@ func main() { //function to create a list of numbers
 
 	smallest, biggest := x[0], x[0] //set largest and smallest to 0
 	for _, v := range x {           //loop through the list
-		if v > biggest { //if the number is bigger than the last sorted largest overwrite it
+		if v > biggest { //if the number is bigger than the last sorted
 			biggest = v
 		}
-		if v < smallest { //if the number is smaller than the last sorted smallest overwrite it
+		if v < smallest {
 			smallest = v
 		}
 	}
